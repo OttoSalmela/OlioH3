@@ -6,9 +6,9 @@ public class Mainclass {
         Scanner input = new Scanner(System.in);
         Integer valinta;
         while(true){
-            System.out.print("*** BOTTLE DISPENSER ***\n" +
+            System.out.print("\n*** BOTTLE DISPENSER ***\n" +
                     "1) Add money to the machine\n" +
-                    "2) Buy bottle\n" +
+                    "2) Buy a bottle\n" +
                     "3) Take money out\n" +
                     "4) List bottles in the dispenser\n" +
                     "0) End\n" +
@@ -24,6 +24,9 @@ public class Mainclass {
                     break;
                 case 3:
                     bd.returnMoney();
+                    break;
+                case 4:
+                    bd.returnList();
                     break;
                 case 0:
                     System.exit(0);
